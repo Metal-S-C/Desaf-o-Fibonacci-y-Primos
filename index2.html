@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Fibonacci y Primos</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Matemáticas que resuelven problemas</h1>
+        <h2>Fibonacci y Números Primos en la vida real</h2>
+
+        <div class="formulario-nombre">
+            <label for="nombre">
+                Ingrese su nombre:
+            </label>
+            <input type="text" id="nombre" placeholder="Escriba su nombre">
+            <button type="button" onclick="mostrarNombre()">
+                Mostrar Nombre
+            </button>
+            <p id="mostrarNombre"></p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Contexto del problema</h2>
+
+            <p>
+                La serie de Fibonacci aparece en muchos fenómenos reales
+                como el crecimiento de plantas, poblaciones y patrones naturales.
+            </p>
+
+            <p>
+                Los números primos son importantes en seguridad informática,
+                criptografía y validación de códigos.
+            </p>
+
+            <p>
+                En este proyecto se genera una secuencia Fibonacci y se identifican
+                cuáles valores también son números primos.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Explicación del algoritmo</h2>
+
+            <p>
+                El algoritmo genera la serie Fibonacci utilizando variables simples
+                y ciclos repetitivos.
+            </p>
+
+            <p>
+                Luego cada número es analizado para verificar si es primo,
+                comprobando cuántos divisores tiene.
+            </p>
+
+            <p>
+                Si el número tiene exactamente dos divisores,
+                entonces es primo.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Formulario</h2>
+
+            <form>
+
+                <label for="cantidad">
+                    Ingrese la cantidad de términos:
+                </label>
+
+                <input
+                    type="number"
+                    id="cantidad"
+                    placeholder="Ejemplo: 10"
+                    min="1"
+                >
+
+                <button
+                    type="button"
+                    onclick="generarSerie()"
+                >
+                    Generar Serie
+                </button>
+
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Resultados</h2>
+
+            <div id="resultado">
+                Aquí aparecerán los resultados...
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Conclusión</h2>
+
+            <p>
+                La matemática permite resolver problemas reales mediante
+                patrones y algoritmos.
+            </p>
+
+            <p>
+                Fibonacci ayuda a comprender procesos de crecimiento y
+                los números primos son fundamentales en la seguridad digital.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Enlaces</h2>
+
+            <p>
+                Repositorio GitHub:
+                <a href="" target="_blank">
+                    Agregar enlace aquí
+                </a>
+            </p>
+
+            <p>
+                Página publicada:
+                <a href="#" target="_blank">
+                    Agregar enlace aquí
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <script src="js/Fibo_y_primos.js"></script>
+
+</body>
+</html>
